@@ -66,7 +66,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
 
         if (flag)
         {
-            recordedAudio = RecordedAudio()
+            recordedAudio = RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent!)
             
             recordedAudio.filePathUrl = recorder.url
             recordedAudio.title = recorder.url.lastPathComponent
